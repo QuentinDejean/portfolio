@@ -1,0 +1,34 @@
+{
+  "name": "portfolio",
+  "version": "0.0.1",
+  "description": "Quentin's portfolio, playing with latest things around",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "^6.9.0",
+    "npm": "^3.10.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QuentinDejean/portfolio.git"
+  },
+  "keywords": [
+    "quentin",
+    "dejean",
+    "portfolio",
+    "software",
+    "engineer",
+    "javascript"
+  ],
+  "author": "Quentin Dejean",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/QuentinDejean/portfolio/issues"
+  },
+  "homepage": "https://github.com/QuentinDejean/portfolio#readme",
+  "dependencies": {
+    "next": "^1.1.1"
+  }
+}

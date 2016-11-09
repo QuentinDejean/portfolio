@@ -1,4 +1,9 @@
-import React from 'react'
+import React from 'react';
+import Head  from 'next/head';
+import MainLayout from '../components/layout/Main';
+
 export default () => (
-  <div>Welcome to next.js!</div>
+  <MainLayout>
+    <p>Hello world!</p>
+  </MainLayout>
 );

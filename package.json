@@ -4,14 +4,11 @@
   "description": "Quentin's portfolio, playing with latest things around",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next"
   },
   "engines": {
     "node": "^6.9.0",
     "npm": "^3.10.8"
-  },
-  "scripts": {
-    "dev": "next"
   },
   "repository": {
     "type": "git",
@@ -33,5 +30,12 @@
   "homepage": "https://github.com/QuentinDejean/portfolio#readme",
   "dependencies": {
     "next": "^1.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.9.1",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.6.0"
   }
 }

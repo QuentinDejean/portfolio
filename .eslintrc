@@ -1,3 +1,15 @@
 {
-  "extends": "airbnb"
+  "extends": "airbnb",
+  rules: {
+    no-multi-spaces: ["error", {
+      exceptions: {
+        "ImportDeclaration": true
+        }
+      }
+    ],
+    comma-dangle: [ 0 ],
+    "react/jsx-filename-extension": [ 1, {
+      extensions: [".js", ".jsx"]
+    }]
+  }
 }

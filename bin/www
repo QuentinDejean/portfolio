@@ -4,10 +4,13 @@
  * Module dependencies.
  */
 
-const http = require('http');
-const app = require('../src/server');
+import debug from 'debug';
+import http from 'http';
 
-const debug = require('debug')('portfolio:server');
+import app from '../src/server';
+
+
+debug('portfolio:server');
 
 /**
  * Normalize a port into a number, string, or false.

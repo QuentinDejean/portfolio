@@ -4,7 +4,7 @@
   "description": "Quentin's portfolio, playing with latest things around",
   "main": "index.js",
   "scripts": {
-    "dev": "next"
+    "dev": "node ./bin/www"
   },
   "engines": {
     "node": "^6.9.0",

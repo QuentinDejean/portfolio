@@ -1,6 +1,8 @@
 const express = require('express');
 const morgan = require('morgan');
 
+const healthController = require('./routes/health');
+
 const app = express();
 app.disable('x-powered-by');
 
@@ -10,5 +12,6 @@ app.use(express.static(`${__dirname}/../client/assets`, {
 
 app.use(morgan('dev'));
 
+app.use('/health', healthController);
 
-export default express;
+module.exports = app;

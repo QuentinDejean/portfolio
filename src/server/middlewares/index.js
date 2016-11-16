@@ -1,10 +1,8 @@
 const express = require('express');
-const webpackMiddleware = require('./webpack/');
 
 const app = express();
 
-const middleware = () => {
-  app.use(webpackMiddleware());
+const renderMiddleware = () => {
   app.use((req, res) => {
     res.status(200).send(`
       <!doctype html>
@@ -23,4 +21,4 @@ const middleware = () => {
   return app;
 };
 
-module.exports = middleware;
+module.exports = renderMiddleware;

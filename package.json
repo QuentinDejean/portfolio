@@ -4,7 +4,7 @@
   "description": "Quentin's portfolio, playing with latest things around",
   "main": "index.js",
   "scripts": {
-    "dev": "node ./bin/www"
+    "dev": "NODE_ENV=develop node ./bin/www"
   },
   "engines": {
     "node": "6.9.0",
@@ -38,12 +38,19 @@
     "react-tap-event-plugin": "1.0.0"
   },
   "devDependencies": {
+    "babel": "6.5.2",
+    "babel-core": "6.18.2",
+    "babel-loader": "6.2.7",
+    "babel-preset-es2015": "6.18.0",
+    "babel-preset-react": "6.16.0",
+    "css-loader": "0.25.0",
     "eslint": "3.9.1",
     "eslint-config-airbnb": "13.0.0",
     "eslint-plugin-import": "2.2.0",
     "eslint-plugin-jsx-a11y": "2.2.3",
     "eslint-plugin-react": "6.6.0",
     "nodemon": "1.11.0",
+    "react-hot-loader": "3.0.0-beta.6",
     "webpack": "2.1.0-beta.27",
     "webpack-dev-middleware": "1.8.4",
     "webpack-hot-middleware": "2.13.2"

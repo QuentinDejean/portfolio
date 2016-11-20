@@ -273,7 +273,7 @@ babel-core@6.18.2, babel-core@^6.18.0:
     slash "^1.0.0"
     source-map "^0.5.0"
 
-babel-generator@6.17.0, babel-generator@^6.17.0:
+babel-generator@6.17.0:
   version "6.17.0"
   resolved "https://registry.yarnpkg.com/babel-generator/-/babel-generator-6.17.0.tgz#b894e3808beef7800f2550635bfe024b6226cf33"
   dependencies:
@@ -285,7 +285,7 @@ babel-generator@6.17.0, babel-generator@^6.17.0:
     lodash "^4.2.0"
     source-map "^0.5.0"
 
-babel-generator@^6.18.0:
+babel-generator@^6.17.0, babel-generator@^6.18.0:
   version "6.18.0"
   resolved "https://registry.yarnpkg.com/babel-generator/-/babel-generator-6.18.0.tgz#e4f104cb3063996d9850556a45aae4a022060a07"
   dependencies:
@@ -399,9 +399,9 @@ babel-loader@6.2.5:
     mkdirp "^0.5.1"
     object-assign "^4.0.1"
 
-babel-loader@6.2.7:
-  version "6.2.7"
-  resolved "https://registry.yarnpkg.com/babel-loader/-/babel-loader-6.2.7.tgz#16fdbf64328030dc5a606827d389c8b92a2a8032"
+babel-loader@6.2.8:
+  version "6.2.8"
+  resolved "https://registry.yarnpkg.com/babel-loader/-/babel-loader-6.2.8.tgz#30d7183aef60afc140b36443676b7acb4c12ac9c"
   dependencies:
     find-cache-dir "^0.1.1"
     loader-utils "^0.2.11"
@@ -3879,7 +3879,7 @@ react-deep-force-update@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/react-deep-force-update/-/react-deep-force-update-2.0.1.tgz#4f7f6c12c3e7de42f345992a3c518236fa1ecad3"
 
-react-dom@15.3.2, react-dom@^15.3.2:
+react-dom@15.3.2:
   version "15.3.2"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-15.3.2.tgz#c46b0aa5380d7b838e7a59c4a7beff2ed315531f"
 
@@ -3920,7 +3920,7 @@ react-tap-event-plugin@1.0.0:
   dependencies:
     fbjs "^0.2.1"
 
-react@15.3.2, react@^15.3.2:
+react@15.3.2:
   version "15.3.2"
   resolved "https://registry.yarnpkg.com/react/-/react-15.3.2.tgz#a7bccd2fee8af126b0317e222c28d1d54528d09e"
   dependencies:

@@ -24,11 +24,11 @@ if (process.env.NODE_ENV === 'develop') {
     stats: {
       assets: true,
       colors: true,
-      version: true,
+      version: false,
       hash: false,
       timings: true,
-      chunks: true,
-      chunkModules: true
+      chunks: false,
+      chunkModules: false
     }
   }));
   app.use(webpackHotMiddleware(compiler));

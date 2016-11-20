@@ -15,6 +15,7 @@ if (process.env.NODE_ENV === 'develop') {
   const config = require('../../webpack.dev.js');
   const webpack = require('webpack');
   const webpackDevMiddleware = require('webpack-dev-middleware');
+  const webpackHotMiddleware = require('webpack-hot-middleware');
 
   const compiler = webpack(config);
   app.use(webpackDevMiddleware(compiler, {
@@ -30,6 +31,7 @@ if (process.env.NODE_ENV === 'develop') {
       chunkModules: true
     }
   }));
+  app.use(webpackHotMiddleware(compiler));
 }
 
 app.use('*', render());

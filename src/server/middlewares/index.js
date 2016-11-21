@@ -1,10 +1,8 @@
 const express = require('express');
-const webpackMiddleware = require('./webpack/');
 
 const app = express();
 
-const middleware = () => {
-  app.use(webpackMiddleware());
+const renderMiddleware = () => {
   app.use((req, res) => {
     res.status(200).send(`
       <!doctype html>
@@ -13,7 +11,7 @@ const middleware = () => {
           <title>Quentin's Portfolio</title>
         </header>
         <body>
-          <div id='app'>This is an app!</div>
+          <div id='app'></div>
           <script src='bundle.js'></script>
         </body>
       </html>
@@ -23,4 +21,4 @@ const middleware = () => {
   return app;
 };
 
-module.exports = middleware;
+module.exports = renderMiddleware;

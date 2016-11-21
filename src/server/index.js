@@ -12,15 +12,17 @@ app.use(morgan('dev'));
 app.use('/health', healthController);
 
 if (process.env.NODE_ENV === 'develop') {
-  const config = require('../../webpack.dev.js');
+  const clientConfig = require('../../webpack.dev.js');
+  const serverConfig = require('../../webpack.server.js');
   const webpack = require('webpack');
   const webpackDevMiddleware = require('webpack-dev-middleware');
   const webpackHotMiddleware = require('webpack-hot-middleware');
 
-  const compiler = webpack(config);
+  const compiler = webpack([clientConfig, serverConfig]);
+
   app.use(webpackDevMiddleware(compiler, {
     noInfo: false,
-    publicPath: config.output.publicPath,
+    publicPath: clientConfig.output.publicPath,
     stats: {
       assets: true,
       colors: true,
@@ -31,6 +33,7 @@ if (process.env.NODE_ENV === 'develop') {
       chunkModules: false
     }
   }));
+
   app.use(webpackHotMiddleware(compiler));
 }
 

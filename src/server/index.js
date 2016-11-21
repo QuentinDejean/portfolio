@@ -12,13 +12,12 @@ app.use(morgan('dev'));
 app.use('/health', healthController);
 
 if (process.env.NODE_ENV === 'develop') {
-  const clientConfig = require('../../webpack.dev.js');
-  const serverConfig = require('../../webpack.server.js');
-  const webpack = require('webpack');
+  const clientConfig         = require('../../webpack.dev.js');
+  const webpack              = require('webpack');
   const webpackDevMiddleware = require('webpack-dev-middleware');
   const webpackHotMiddleware = require('webpack-hot-middleware');
 
-  const compiler = webpack([clientConfig, serverConfig]);
+  const compiler = webpack(clientConfig);
 
   app.use(webpackDevMiddleware(compiler, {
     noInfo: false,
